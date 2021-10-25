@@ -1,6 +1,7 @@
 
 function openURL(){
-    let url = window.location.href
-    let cleanURL = url.split('url=')[1];
-    window.open(cleanURL, '_blank')
+    let jQueryStyle = window.location.search
+    let urlParams = new URLSearchParams(jQueryStyle)
+    let mySingleUrl = urlParams.get('url')
+    window.open(mySingleUrl, '_blank')
 }

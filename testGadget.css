@@ -1,5 +1,15 @@
-.openURL{
+#header{
+    text-align: center;
+    margin-top: 75px;
+}
+
+#openURL{
+    display: block;
+    text-align: center;
     margin-top:167px;
-    width:1024px;
-    height:34px;
+    margin-left:auto;
+    margin-right:auto;
+    width:50px;
+    height:45px;
+    background-color: #008CBA;
 }

@@ -1,12 +1,38 @@
-<DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <link rel="stylesheet" href="testGadget.css">
-        <script src="testGadget.js"></script>
+        <!-- jQuery-->
+        <script type="text/javascript" src="js/lib/jquery.min.js"></script>
+          <link rel="stylesheet" href="css/testGadget.css">
+            <!-- Finesse Library -->
+    <script>
+        jQuery.ajax({
+            url: "/desktop/assets/js/finesse.js",
+            dataType: "script",
+            async: false
+        });
+    </script>
+
+      <!-- Finesse Helper Library -->
+      <script type="test/javascript" src="js/lib/finn-0.9.8.js"></script>
+    
+        <script src="js/testGadget.js"></script>
+
+        <script type="text/javascript">
+            $(function() {
+                finesse.modules.DantestGadget.init();
+            });
+        </script>
     </head>
     <body>
-        <div id="header">
-            My first gadget!
+        <button id="openURL" class="ch-button md-button md-button--blue">Open url</button>
+        <div id="container">
         </div>
-        <button id="openURL" onclick="openURL()">Open url</button>
+              <!-- Adding CSS without Finesse messing with it -->
+      <script type="text/javascript">
+        var baseUrl = window._getParameter("baseUrl") + "css/";
+        window.injectResource(baseUrl + "momentum-ui.min.css");
+        window.injectResource(baseUrl + "testGadget.css");
+    </script>
     </body>
-</DOCTYPE>
+</html>

@@ -1,0 +1,30 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body {
+    font-family: arial, sans-serif !important;
+    margin: 0;
+    height: 100%;
+    background-color: transparent !important;
+    font-size: 14px !important;
+  }
+
+.ch-button {
+    display: inline-block;
+    margin: 10px 0 0 25px ;
+    border-radius: 4px;
+    min-width: 75px;
+    height: 30px;
+    padding: 0 10px;
+    white-space: nowrap;
+  }
+
+  #container {
+    max-height: 250px;
+    overflow-y: auto;
+  }

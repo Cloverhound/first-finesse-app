@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+    <ModulePrefs title="Dan test app">
+        <Require feature="settitle" />
+        <Require feature="dynamic-height" />
+        <Require feature="pubsub-2" />
+        <Require feature="setprefs" />
+        <Require feature="loadingindicator" />
+        <Optional feature="content-overwrite">
+            <Param name="expires">86400</Param>
+            <Param name="include-url">.*</Param>
+            <Param name="exclude-url">.css</Param>
+        </Optional>
+    </ModulePrefs>
+    <UserPref name="scheme" display_name="scheme" default_value=""/>
+    <UserPref name="host" display_name="host" default_value=""/>
+    <UserPref name="hostPort" display_name="hostPort" default_value=""/>
+    <UserPref name="externalServerHost"/>
+    <Content type="html" href="testGadget.html"></Content>
+</Module>
